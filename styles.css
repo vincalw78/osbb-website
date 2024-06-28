@@ -1,4 +1,4 @@
-/* styles.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
 
 body {
@@ -8,12 +8,12 @@ body {
 }
 
 header {
-    background-color: rgb(125, 28, 137); /* Змінений колір фону для заголовка сайту */
+    background-color: rgb(125, 28, 137);
     color: white;
     display: flex;
     justify-content: space-between;
     padding: 1em;
-    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок при малому екрані */
+    flex-wrap: wrap;
 }
 
 .logo, .navigation {
@@ -21,13 +21,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center; /* Центрування тексту */
+    text-align: center;
 }
 
 .logo h1 {
     margin: 0;
-    font-size: 50px; /* Розмір шрифту для логотипу */
-    font-family: sans-serif; /* Шрифт sans-serif для логотипу */
+    font-size: 50px;
+    font-family: sans-serif;
 }
 
 nav ul {
@@ -36,43 +36,43 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок при малому екрані */
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    margin: 0.5em; /* Відступ між елементами меню */
+    margin: 0.5em;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-family: 'Comfortaa', sans-serif; /* Шрифт Comfortaa для навігації */
-    font-size: 17px; /* Розмір шрифту для навігації */
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 17px;
 }
 
 main {
     padding: 2em;
     text-align: center;
-    padding-bottom: 5em; /* Додано нижній відступ для уникнення перекриття футером */
+    padding-bottom: 5em;
 }
 
 .main-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок при малому екрані */
+    flex-wrap: wrap;
 }
 
 .text-content {
     flex: 1;
     padding-right: 1em;
-    text-align: left; /* Вирівнювання тексту по лівому краю */
+    text-align: left;
 }
 
 .image-content {
     flex: 1;
     text-align: right;
-    margin-top: 2em; /* Додано відступ зверху для кращого вигляду на малих екранах */
+    margin-top: 2em;
 }
 
 .image-content img {
@@ -81,29 +81,29 @@ main {
 }
 
 .main-heading {
-    font-size: 28px; /* Змінений розмір шрифту для заголовка */
+    font-size: 28px;
 }
 
 .services-list {
     list-style-type: disc;
     padding-left: 20px;
-    font-size: 20px; /* Розмір шрифту для списку */
+    font-size: 20px;
     text-align: left;
     display: inline-block;
     margin-top: 0;
 }
 
 .services-list li {
-    margin-bottom: 0.5em; /* Додано відступ між елементами списку */
+    margin-bottom: 0.5em;
 }
 
 .info-text {
-    font-size: 30px; /* Розмір шрифту для інформаційних текстів */
+    font-size: 30px;
     margin: 1em 0;
 }
 
 .bottom-text {
-    padding: 50px 0; /* Відступи для нижнього тексту */
+    padding: 50px 0;
 }
 
 .pricing-table {
@@ -121,14 +121,14 @@ main {
     flex: 1 1 30%;
     box-sizing: border-box;
     transition: transform 0.3s;
-    margin-left: -1px; /* Ensure no gaps between the boxes */
-    background-color: #f9f9f9; /* Світлий фон для блоку */
+    margin-left: -1px;
+    background-color: #f9f9f9;
 }
 
 .price-plan h2 {
     margin-top: 0;
-    background-color: rgb(125, 28, 137); /* Змінений колір фону для заголовка тарифного плану */
-    color: white; /* Контрастний білий шрифт */
+    background-color: rgb(125, 28, 137);
+    color: white;
     padding: 0.5em;
     border-radius: 10px 10px 0 0;
 }
@@ -157,21 +157,27 @@ main {
     color: #888;
 }
 
+.additional-info {
+    margin-top: 1em;
+    font-size: 0.9em;
+    color: #555;
+}
+
 .contact-info {
     display: flex;
-    justify-content: center; /* Вирівнювання по горизонталі */
-    align-items: center; /* Вирівнювання по вертикалі */
+    justify-content: center;
+    align-items: center;
     text-align: left;
-    font-size: 22px; /* Розмір шрифту для контактної інформації */
-    gap: 2em; /* Відступ між елементами */
-    flex-wrap: wrap; /* Дозволяє перенесення рядків для меншого екрана */
-    margin-top: 2em; /* Додано верхній відступ */
+    font-size: 22px;
+    gap: 2em;
+    flex-wrap: wrap;
+    margin-top: 2em;
 }
 
 .contact-item {
     display: flex;
     align-items: flex-start;
-    gap: 0.5em; /* Додано розрив між елементами */
+    gap: 0.5em;
 }
 
 .contact-item i {
@@ -185,11 +191,11 @@ main {
 
 contact-text strong {
     font-weight: bold;
-    margin-bottom: 0.5em; /* Збільшено відступ між заголовком і текстом */
+    margin-bottom: 0.5em;
 }
 
 .contact-text p, .contact-text a {
-    margin: 0; /* Прибрано відступи для p та a всередині contact-text */
+    margin: 0;
 }
 
 .contact-form {
@@ -219,7 +225,7 @@ contact-form button {
 }
 
 footer {
-    background-color: rgb(125, 28, 137); /* Змінений колір фону для футера */
+    background-color: rgb(125, 28, 137);
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -228,7 +234,6 @@ footer {
     bottom: 0;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
@@ -236,15 +241,15 @@ footer {
 
     .text-content {
         padding-right: 0;
-        text-align: center; /* Центрування тексту на малих екранах */
+        text-align: center;
     }
 
     .image-content {
-        margin-top: 1em; /* Зменшений відступ зверху на малих екранах */
-        text-align: center; /* Центрування зображення на малих екранах */
+        margin-top: 1em;
+        text-align: center;
     }
 
     .logo h1 {
-        font-size: 30px; /* Зменшений розмір шрифту для логотипу на малих екранах */
+        font-size: 30px;
     }
 }
