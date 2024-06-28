@@ -1,0 +1,250 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(125, 28, 137); /* Змінений колір фону для заголовка сайту */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок при малому екрані */
+}
+
+.logo, .navigation {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Центрування тексту */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 50px; /* Розмір шрифту для логотипу */
+    font-family: sans-serif; /* Шрифт sans-serif для логотипу */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок при малому екрані */
+}
+
+nav ul li {
+    margin: 0.5em; /* Відступ між елементами меню */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Comfortaa', sans-serif; /* Шрифт Comfortaa для навігації */
+    font-size: 17px; /* Розмір шрифту для навігації */
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+    padding-bottom: 5em; /* Додано нижній відступ для уникнення перекриття футером */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Дозволяє елементам переноситися на новий рядок при малому екрані */
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 1em;
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+}
+
+.image-content {
+    flex: 1;
+    text-align: right;
+    margin-top: 2em; /* Додано відступ зверху для кращого вигляду на малих екранах */
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-heading {
+    font-size: 28px; /* Змінений розмір шрифту для заголовка */
+}
+
+.services-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 20px; /* Розмір шрифту для списку */
+    text-align: left;
+    display: inline-block;
+    margin-top: 0;
+}
+
+.services-list li {
+    margin-bottom: 0.5em; /* Додано відступ між елементами списку */
+}
+
+.info-text {
+    font-size: 30px; /* Розмір шрифту для інформаційних текстів */
+    margin: 1em 0;
+}
+
+.bottom-text {
+    padding: 50px 0; /* Відступи для нижнього тексту */
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.price-plan {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    margin-left: -1px; /* Ensure no gaps between the boxes */
+    background-color: #f9f9f9; /* Світлий фон для блоку */
+}
+
+.price-plan h2 {
+    margin-top: 0;
+    background-color: rgb(125, 28, 137); /* Змінений колір фону для заголовка тарифного плану */
+    color: white; /* Контрастний білий шрифт */
+    padding: 0.5em;
+    border-radius: 10px 10px 0 0;
+}
+
+.price-plan:hover {
+    transform: scale(1.05);
+}
+
+.price-plan hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 0.5em 0;
+    width: calc(100% - 2em);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price {
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.price span {
+    font-size: 0.5em;
+    display: block;
+    color: #888;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center; /* Вирівнювання по горизонталі */
+    align-items: center; /* Вирівнювання по вертикалі */
+    text-align: left;
+    font-size: 22px; /* Розмір шрифту для контактної інформації */
+    gap: 2em; /* Відступ між елементами */
+    flex-wrap: wrap; /* Дозволяє перенесення рядків для меншого екрана */
+    margin-top: 2em; /* Додано верхній відступ */
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em; /* Додано розрив між елементами */
+}
+
+.contact-item i {
+    font-size: 2em;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+}
+
+contact-text strong {
+    font-weight: bold;
+    margin-bottom: 0.5em; /* Збільшено відступ між заголовком і текстом */
+}
+
+.contact-text p, .contact-text a {
+    margin: 0; /* Прибрано відступи для p та a всередині contact-text */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-form label {
+    margin-top: 1em;
+}
+
+contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+contact-form button {
+    margin-top: 1em;
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(125, 28, 137); /* Змінений колір фону для футера */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .text-content {
+        padding-right: 0;
+        text-align: center; /* Центрування тексту на малих екранах */
+    }
+
+    .image-content {
+        margin-top: 1em; /* Зменшений відступ зверху на малих екранах */
+        text-align: center; /* Центрування зображення на малих екранах */
+    }
+
+    .logo h1 {
+        font-size: 30px; /* Зменшений розмір шрифту для логотипу на малих екранах */
+    }
+}
